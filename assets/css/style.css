@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*reset todos los predeterminados*/
+:root{
+  --color-primario:#000000;
+  --color-secundario: #F6F6F6;
+  --color-terciario:#22D4FD;
+  --color-hover: #2277;
+  --fuente-Montserrat:"Montserrat", sans-serif;
+  --fuente-Krona:"Krona One", sans-serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: var(--color-primario);
+  color:var(--color-secundario);
+  height: 100vh;
+  box-sizing: border-box;
+}
+.header{
+  padding: 2% 0% 0% 10%;
+  width: 100%;
+}
+.header-menu{
+  display: flex;
+  gap:50px;
+}
+.header-menu-link{
+  font-size: 1.5rem;
+  font-family: var(--fuente-Montserrat);
+  font-weight: 600;
+  color: var(--color-terciario);
+  text-decoration: none;
+}
+.title-strong{
+  color: var(--color-terciario);
+}
+.container{
+  padding:2% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 60px;
+}
+.container-seccion{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 40px;
+}
+.container-seccion-title{
+  font-size: 2.25rem;
+  font-family:var(--fuente-Krona);
+}
+.container-seccion-texto{
+  font-size: 1.5rem;
+  font-family: var(--fuente-Montserrat);
+}
+.container-enlace{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  grid-gap: 10px;
+  align-items: center;
+}
+.container-enlace-sibtitle{
+  font-family: var(--fuente-Krona);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.container-link{
+  width: 50%;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 8px;
+  font-family: var(--fuente-Montserrat);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-secundario);
+  border: 2px solid var(--color-terciario);
+  display: flex;
+  justify-content: center;
+  grid-gap: 10px;
+}
+.container-link:hover{
+  background-color:var(--color-hover);
+}
+.container-imagen{
+  width: 50%;
+}
+.footer{
+  background-color: var(--color-terciario);
+  padding: 16px;
+  width: 100%;
+  color: var(--color-primario);
+  text-align: center;
+  font-family: var(--fuente-Montserrat);
+  font-size:1rem;
+}
+@media (max-width:1200px) {
+  .header{
+    padding: 10%;
+  }
+  .header-menu{
+    justify-content: center;
+  }
+  .container{
+    flex-direction: column-reverse;
+  }
+
+}
